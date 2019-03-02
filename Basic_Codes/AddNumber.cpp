@@ -34,7 +34,6 @@ string add(string str1, string str2) {
 int main() {
     string str[2];
     cin>>str[0]>>str[1];
-    cout<<"Sum : "<<sum(str[0],str[1]);
-    cout<<"\nAdd : "<<add(str[0],str[1]);
+    cout<<"Sum : "<<add(str[0],str[1]);
     return 0;
 }
