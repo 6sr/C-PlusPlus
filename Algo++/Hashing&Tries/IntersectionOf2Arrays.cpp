@@ -1,0 +1,47 @@
+//AbhiG
+//Take as input N, the size of array. Take N more inputs and store that in an array. Take N more inputs and store that in another array.
+//Write a function which gives the intersection of two arrays in an ArrayList of integers and Print the ArrayList.
+
+#include<iostream>
+#include<unordered_map>
+#include<queue>
+#include<vector>
+#include<functional>
+using namespace std;
+int main()
+{
+     unordered_map<int,int> mp;
+     priority_queue<int,vector<int>,greater<int> >pq;
+     int n;
+     cin>>n;
+     int num;
+     for(int i=0;i<1000;i++)
+     mp[i]=0;
+     for(int i=0;i<n;i++)
+     {
+         cin>>num;
+         mp[num]=mp[num]+1;
+     }
+     cout<<"[";
+     
+     for(int j=0;j<n;j++)
+     {
+         cin>>num;
+         if(mp[num]>0)
+         {
+             pq.push(num);
+             mp[num]=mp[num]-1;
+
+         }
+     }
+     cout<<pq.top();
+     pq.pop();
+     while(!pq.empty())
+     {
+        cout<<", "<<pq.top();
+        pq.pop();
+     }
+     cout<<"]";
+     return 0;
+
+}
