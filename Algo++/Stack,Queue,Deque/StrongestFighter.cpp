@@ -1,3 +1,6 @@
+//There is a group of MMA fighters standing together in a line. Given the value of their strengths, find the strength of the 
+//strongest fighter in continuous sub-groups of size k.
+
 #include<iostream>
 #include<stack>
 using namespace std;
