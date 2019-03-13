@@ -1,3 +1,8 @@
+//You are given an N*M grid. Each cell (i,j) in the grid is either blocked, or empty. The rat can move from a position towards 
+//left, right, up or down on the grid.
+//Initially rat is on the position (1,1). It wants to reach position (N,M) where it's cheese is waiting for. There exits a unique 
+//path in the grid . Find that path and help the rat reach its cheese.
+
 #include<iostream>
 using namespace std;
 
