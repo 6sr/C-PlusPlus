@@ -1,3 +1,4 @@
+//Arrange elements in a Linked List such that all even numbers are placed after odd numbers.
 #include<iostream>
 using namespace std;
 
