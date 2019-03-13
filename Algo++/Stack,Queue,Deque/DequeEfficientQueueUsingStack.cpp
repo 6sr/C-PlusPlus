@@ -1,4 +1,5 @@
 //AbhiG
+//Implement a Queue using two stacks Make it Dequeue efficient.
 #include<iostream>
 using namespace std;
 int main()
