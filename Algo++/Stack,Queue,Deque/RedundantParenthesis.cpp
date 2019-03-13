@@ -1,4 +1,7 @@
 //AbhiG
+//You are given an balanced expression. You have to find if it contains duplicate parentheses or not. A set of parentheses are 
+//duplicate if same subexpression is surrounded by multiple parenthesis.
+
 #include<iostream>
 #include<stack>
 using namespace std;
