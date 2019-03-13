@@ -1,3 +1,4 @@
+//Reverse a Stack using Recursion.
 #include<iostream>
 #include<stack>
 
