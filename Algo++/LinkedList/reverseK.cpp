@@ -1,4 +1,6 @@
-#include<iostream>
+//Given a head to Linked List L, write a function to reverse the list taking k elements at a time. Assume k is a factor of the size 
+//of List.
+//You need not have to create a new list. Just reverse the old one using head.#include<iostream>
 using namespace std;
 
 class node {
