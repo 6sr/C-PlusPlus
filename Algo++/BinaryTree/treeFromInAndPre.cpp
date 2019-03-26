@@ -65,16 +65,14 @@ void printIn(node* root) {
 int main() {
     int n,m;
     cin>>n;
-    int *in = new int[n];
-    //int in[n];
+    int pre[n];
     for(int i = 0 ;i < n;i++) {
-        cin>>in[i];
+        cin>>pre[i];
     }
     cin>>m;
-    int *pre = new int[m];
-    //int pre[m];
+    int in[m];
     for(int i = 0 ;i < m;i++) {
-        cin>>pre[i];
+        cin>>in[i];
     }
     node* root = createTreeFromTrav(in,pre,0,n - 1);
     printIn(root);
