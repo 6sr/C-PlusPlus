@@ -16,6 +16,7 @@ public:
     }
 };
 
+//Error in this function
 node* createTreeFromTrav(int *in,int *pre,int s,int e){
     static int i = 0;
     //Base Case
@@ -39,6 +40,28 @@ node* createTreeFromTrav(int *in,int *pre,int s,int e){
     return root;
 }
 
+void printIn(node* root) {
+    if(root == NULL) {
+        return;
+    }
+    if(root->left == NULL) {
+        cout<<"END => ";
+    }
+    else {
+        cout<<root->left<<" => ";
+    }
+    cout<<root->data;
+    if(root->left == NULL) {
+        cout<<" <= END";
+    }
+    else {
+        cout<<" <= "<<root->left;
+    }
+    cout<<endl;
+    printIn(root->left);
+    printIn(root->right);
+}
+
 int main() {
     int n,m;
     cin>>n;
@@ -53,5 +76,7 @@ int main() {
     for(int i = 0 ;i < m;i++) {
         cin>>pre[i];
     }
+    node* root = createTreeFromTrav(in,pre,0,n - 1);
+    printIn(root);
     return 0;
 }
