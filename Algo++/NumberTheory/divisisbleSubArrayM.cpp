@@ -1,4 +1,4 @@
-//Manal
+//Manal got 50
 //You are given N elements, a1,a2,a3….aN. Find the number of good sub-arrays.
 //A good sub-array is a sub-array [ai,ai+1,ai+2….aj] such that (ai+ai+1+ai+2+….+aj) is divisible by N.
 
