@@ -7,6 +7,7 @@
 
  Do this for i = 0 to i < (n+1)/2	-> by inspection
  In below code we iterate till (n-1)/2 as 1st case is done separately
+ First selects number at 2,4,6,... and then at 1,3,5,7,.....
  lol
 */
 
